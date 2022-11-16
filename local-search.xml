@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>fake_blbl</title>
+    <link href="/posts/7dd7bbd3/"/>
+    <url>/posts/7dd7bbd3/</url>
+    
+    <content type="html"><![CDATA[<h3 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h3><ul><li><p>想要项目练手的同学可以考虑网y云的项目，github 上有专门的api服务,相对来说舒心一点。</p></li><li><p>这是一个小项目，也算是作者迈出前端的第一步，在此之前都没有了解js,h5，c3。所以代码很“青涩”，放在此处做一个念想，毕竟是自己第一个小项目。</p></li><li><p>本项目用nginx代理，获取blbl wx小程序的资源，利用fidder 进行抓包，截至22年11月，有些api还是可以用的（网上有些帖子专门收集的，有些资源需要app key 才能访问），引入了vant 组件库，但是没有，刚开始不知道怎么用。</p></li><li><p>实现功能</p><ul><li><p>首页轮播图，返回顶点。</p><img src="https://s2.loli.net/2022/11/05/MIrSJLOP3ZNXsAd.png" style="zoom:50%;" /><img src="C:\Users\lijusting\AppData\Roaming\Typora\typora-user-images\image-20221105201120991.png" alt="image-20221105201120991" style="zoom:50%;" /></li><li><p>分类界面（有些分类跳转web view)</p><img src="C:\Users\lijusting\AppData\Roaming\Typora\typora-user-images\image-20221105201200523.png" alt="image-20221105201200523" style="zoom:50%;" /></li><li><p>视频播放，弹幕（配合小程序的弹幕）。</p><img src="C:\Users\lijusting\AppData\Roaming\Typora\typora-user-images\image-20221105201254152.png" alt="image-20221105201254152" style="zoom:50%;" /></li><li><p>简介的折叠展开。</p></li></ul></li><li><p>项目还有很多可以优化的地方，比如防抖，增加动画过渡，界面可以再美化一点）</p></li></ul><h3 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h3><ul><li><p>下载[微信开发者工具](<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">微信开发者工具（稳定版 Stable Build）下载地址与更新日志 | 微信开放文档 (qq.com)</a>)</p></li><li><p>下载[nginx](<a href="http://nginx.org/en/download.html">nginx: download</a>) 版本</p><img src="https://s2.loli.net/2022/11/05/DZ6Verf9UcXpJGn.png" style="zoom: 50%;" /></li></ul><p>​       前面的是<code>linux</code>版本，后面带<code>windows</code> 是<code>Windows</code>版本。</p><ul><li><p>下载<a href="https://www.aliyundrive.com/s/naLd98Kf4Dh">nginx 配置文件</a>。</p></li><li><p>下载[fiddler](<a href="https://www.telerik.com/download/fiddler/fiddler4">Fiddler4 (telerik.com)</a>) 如果你不需要自己抓包（获取api）可以省略这一步</p><p><code>fidder</code>的简单使用教程我准备写在另外的一篇博客。</p></li><li><p>用上面下载下来的文件替换<code>nginx</code>安装路径下 <code>nginx-1.22.1\conf</code>下面的<code>nginx.config</code>文件，然后返回上级点击<code>nginx</code>应用程序</p><img src="https://s2.loli.net/2022/11/05/jdOmQ89Ka3g4GR6.png" style="zoom:50%;" /></li><li><p>打开<code>微信开发者工具</code>,选择小程序，导入从<a href="">github</a> 下载下来的文件,选择不使用云服务，点击确认就行了</p></li></ul><p>​       <img src="C:\Users\lijusting\AppData\Roaming\Typora\typora-user-images\image-20221105200213868.png" alt="image-20221105200213868"></p><p><img src="C:\Users\lijusting\AppData\Roaming\Typora\typora-user-images\image-20221105200608182.png" alt="image-20221105200608182"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>微信小程序</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>语言基础part2</title>
     <link href="/posts/6f9d94d0/"/>
     <url>/posts/6f9d94d0/</url>
