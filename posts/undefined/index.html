@@ -18,18 +18,18 @@
   <meta name="author" content="lijusting">
   <meta name="keywords" content="">
   
-    <meta name="description" content="背景知识为什么会有这pxtorem 因为我们还原的psd 图通常是px 为单位的，而px 是一个绝对长度单位，它与其他任何东西都没有关系，通常被认为总是相同的大小。这[MDN](CSS 的值与单位 - 学习 Web 开发 | MDN (mozilla.org))的原话。   ​		 px是96分之一英寸。 ​		 这就会导致我们在不同尺寸的屏幕或者窗口大小下，元素大小是一样的，可能有同学要问了，元">
+    <meta name="description" content="背景知识为什么会有这pxtorem 因为我们还原的psd 图通常是px 为单位的，而px 是一个绝对长度单位，它与其他任何东西都没有关系，通常被认为总是相同的大小。这MDN的原话。   ​		 px是96分之一英寸。 ​		 这就会导致我们在不同尺寸的屏幕或者窗口大小下，元素大小是一样的，可能有同学要问了，元素大小一样不是更好么，试想一下，你的头像在手机大小的显示器上的大小跟平常笔记本显示器上的大">
 <meta property="og:type" content="article">
 <meta property="og:title" content="postcss-pxtorem配置">
 <meta property="og:url" content="https://lijusting.top/posts/undefined/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="背景知识为什么会有这pxtorem 因为我们还原的psd 图通常是px 为单位的，而px 是一个绝对长度单位，它与其他任何东西都没有关系，通常被认为总是相同的大小。这[MDN](CSS 的值与单位 - 学习 Web 开发 | MDN (mozilla.org))的原话。   ​		 px是96分之一英寸。 ​		 这就会导致我们在不同尺寸的屏幕或者窗口大小下，元素大小是一样的，可能有同学要问了，元">
+<meta property="og:description" content="背景知识为什么会有这pxtorem 因为我们还原的psd 图通常是px 为单位的，而px 是一个绝对长度单位，它与其他任何东西都没有关系，通常被认为总是相同的大小。这MDN的原话。   ​		 px是96分之一英寸。 ​		 这就会导致我们在不同尺寸的屏幕或者窗口大小下，元素大小是一样的，可能有同学要问了，元素大小一样不是更好么，试想一下，你的头像在手机大小的显示器上的大小跟平常笔记本显示器上的大">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/11/21/yWY168wu3zjRTOU.png">
-<meta property="og:image" content="c:/Users/lijusting/AppData/Roaming/Typora/typora-user-images/image-20221121163346678.png">
+<meta property="og:image" content="https://s2.loli.net/2022/11/21/pfOIcHNUhWaw32x.png">
 <meta property="og:image" content="https://s2.loli.net/2022/11/21/IXsjVUr2lGD1Ytm.png">
 <meta property="article:published_time" content="2022-11-17T18:20:39.000Z">
-<meta property="article:modified_time" content="2022-11-21T11:56:40.723Z">
+<meta property="article:modified_time" content="2022-11-21T12:20:27.121Z">
 <meta property="article:author" content="lijusting">
 <meta property="article:tag" content="bug,前端">
 <meta name="twitter:card" content="summary_large_image">
@@ -229,7 +229,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          1.6k 字
         
       </span>
     
@@ -284,12 +284,12 @@
               <div class="markdown-body">
                 
                 <h3 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h3><p>为什么会有这pxtorem</p>
-<p>因为我们还原的psd 图通常是px 为单位的，而px 是一个绝对长度单位，它与其他任何东西都没有关系，通常被认为总是相同的大小。这[MDN](<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Values_and_units#%E4%BB%80%E4%B9%88%E6%98%AF_css_%E7%9A%84%E5%80%BC%EF%BC%9F">CSS 的值与单位 - 学习 Web 开发 | MDN (mozilla.org)</a>)的原话。</p>
+<p>因为我们还原的psd 图通常是px 为单位的，而px 是一个绝对长度单位，它与其他任何东西都没有关系，通常被认为总是相同的大小。这<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Values_and_units#%E4%BB%80%E4%B9%88%E6%98%AF_css_%E7%9A%84%E5%80%BC%EF%BC%9F">MDN</a>的原话。</p>
 <img src="https://s2.loli.net/2022/11/21/yWY168wu3zjRTOU.png" srcset="/img/loading.gif" lazyload style="zoom:67%;" />
 
 <p>​		 px是96分之一英寸。</p>
 <p>​		 这就会导致我们在不同尺寸的屏幕或者窗口大小下，元素大小是一样的，可能有同学要问了，元素大小一样不是更好么，试想一下，你的头像在<strong>手机大小的显示器上</strong>的大小跟<strong>平常笔记本显示器上</strong>的大小一样，很不美观，几乎不能阅读，没有用户体验，这个时候想，如果元素能根据设备大小自动缩放就好了，于是在脑子里回忆，好像有个单位能做到，vm和vh，它们是根据视窗的宽高的来定义的相对长度单位。</p>
-<img src="C:\Users\lijusting\AppData\Roaming\Typora\typora-user-images\image-20221121163346678.png" srcset="/img/loading.gif" lazyload alt="image-20221121163346678" style="zoom: 67%;" />
+<img src="https://s2.loli.net/2022/11/21/pfOIcHNUhWaw32x.png" srcset="/img/loading.gif" lazyload style="zoom:67%;" />
 
 <p>​	     但是，当视窗宽度不变时，视窗高度发生变化，那元素就只有高度发生变化了，元素会被拉长或者压扁，那有没有一个单位能实现宽高的同时缩放呢，在css的单位中有一个相对长度单位<code>rem</code>能满足我们的需求，<code>rem</code>是一个<strong>相对与根元素的字体大小</strong>的相对长度单位。但是它也不能实现当窗口变化时，元素大小也发生变化，因为根元素的字体大小是不变的，我们把根元素设置成可变的就可以了。</p>
 <p>​		 基于以上，我们更愿意去用<code>rem</code>做单位，而不是<code>px</code>，但是我们拿到的就是<code>px</code>, 我们需要将<code>px</code>转换成<code>rem</code>，这是很麻烦的，元素长度单位px&#x2F;根元素的字体大小px&#x3D;rem，一般情况下还会有小数点，这个时候我们会希望有东西能帮我们做这个事情，于是<code>potorem</code>出场了。</p>
